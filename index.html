@@ -4,31 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Todo app</title>
 </head>
 
 <body>
-
-  Todo
-
-  <!-- Add dynamic number --> items left
-
-  All
-  Active
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <div class="bg-image"></div>
+  <section>
+    <header>
+      <h1>TODO</h1>
+      <img src="images/icon-moon.svg" alt="moon" class="go-darkmode">
+    </header>
+    <div class="item__new">
+      <input type="text" class="input__new" placeholder="... ADD A NEW TODO">
+    </div>
+    <ul>
+      <li>
+        <label for="todo-one" class="created one">
+          <input type="checkbox" id="todo-one" class="created-todo-one" name="first-todo">
+          Complete online JavaScript course</label>
+      </li>
+      <li>
+        <label for="todo-two" class="created two">
+          <input type="checkbox" id="todo-two" class="created-todo-two" name="first-todo">
+          Jog around the park 3x</label>
+      </li>
+      <li>
+        <label for="todo-three" class="created three">
+          <input type="checkbox" id="todo-three" class="created-todo-three" name="first-todo">
+          10 minutes meditation</label>
+      </li>
+      <li>
+        <label for="todo-four" class="created four">
+          <input type="checkbox" id="todo-four" class="created-todo-four" name="first-todo">
+          Read for 1 hour</label>
+      </li>
+      <li>
+        <label for="todo-five" class="created five">
+          <input type="checkbox" id="todo-five" class="created-todo-five" name="first-todo">
+          Pick up groceries</label>
+      </li>
+      <li>
+        <label for="todo-six" class="created six">
+          <input type="checkbox" id="todo-six" class="created-todo-six" name="first-todo">
+          Complete Todo App on Frontend Mentor</label>
+      </li>
+    </ul>
+  </section>
 </body>
 
 </html>

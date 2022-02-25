@@ -1,0 +1,167 @@
+body {
+    font-family: josefin sans;
+    font-size: 18px;
+    margin: 0;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    margin:0;
+    color: white;
+letter-spacing: 1rem;
+}
+
+section {
+    height: 50rem;
+    width: 25rem;
+   /* background-color: red ;
+    opacity: 0.5;  */
+    margin: 2rem;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.bg-image {
+    height: 40vh;
+    width: 100vw;
+    background-image: url("images/bg-desktop-light.jpg");
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: cover;
+    position: absolute;
+    z-index: -10;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .bg-image {
+        height: 33vh;
+        width: 100vw;
+        background-image: url("images/bg-mobile-light.jpg");
+        background-size: 100% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background: cover;
+    }
+}
+
+.input__new {
+    height: 3rem;
+    width: 100%;
+    background-color: white;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+}
+
+.input__new:focus,
+.input__new:active {
+border-color: transparent;
+border-bottom: 5px solid rgba(0, 255, 0, 0.692);
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+
+.created {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+    background-color: white;
+    border: 0;
+    margin: 0;
+    font-size: .8rem;
+    font-weight: 400;
+    margin-top: .1rem;
+}
+
+.created.one {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.created-todo-one,
+.created-todo-two,
+.created-todo-three,
+.created-todo-four,
+.created-todo-five,
+.created-todo-six {
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+/* .created-todo-one:checked,
+.created-todo-two:checked,
+.created-todo-three:checked,
+.created-todo-four:checked,
+.created-todo-five:checked,
+.created-todo-six:checked { */
+    
+    .created-todo-one:checked,
+    .created-todo-two:checked,
+    .created-todo-three:checked,
+    .created-todo-four:checked,
+    .created-todo-five:checked,
+    .created-todo-six:checked { 
+
+    /*https://www.joshwcomeau.com/gradient-generator/*/
+    background: linear-gradient(
+            135deg,
+            hsl(192deg 100% 67%) 0%,
+            hsl(200deg 99% 67%) 9%,
+            hsl(208deg 98% 67%) 18%,
+            hsl(216deg 96% 66%) 27%,
+            hsl(224deg 95% 66%) 36%,
+            hsl(232deg 94% 66%) 45%,
+            hsl(240deg 93% 66%) 55%,
+            hsl(248deg 92% 66%) 64%,
+            hsl(256deg 90% 65%) 73%,
+            hsl(264deg 89% 65%) 82%,
+            hsl(272deg 88% 65%) 91%,
+            hsl(280deg 87% 65%) 100%
+      );
+    opacity: .5;
+}
+
+/*maybe for checkmark:
+
+input[type="checkbox"]:checked::after{
+    
+content:'\002714';
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 900;
+font-size:.75rem;
+}
+*/
