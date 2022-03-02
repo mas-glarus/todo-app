@@ -1,0 +1,24 @@
+$font-family-main: josefin sans;
+$font-size-main: 18px;
+$font-size-general: 1rem;
+$spaced-heading: 1rem;
+$font-size-h1: 2.5rem;
+$font-weight-low: 400;
+$font-weight-high: 700;
+
+body {
+	font-family: $font-family-main;
+	font-size: $font-size-main;
+
+	h1 {
+		font-size: $font-size-h1;
+		letter-spacing: $spaced-heading;
+	}
+
+	.input__new,
+	.created .todo-items-info {
+		font-size: $font-size-general;
+		font-weight: $font-weight-low;
+		font-family: $font-family-main;
+	}
+}

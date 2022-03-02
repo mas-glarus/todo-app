@@ -1,0 +1,41 @@
+.bg-image {
+	height: 40vh;
+	width: 100vw;
+	background-image: url("images/bg-desktop-light.jpg");
+	background-size: 100% 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: cover;
+	position: absolute;
+	z-index: -10;
+}
+
+@media screen and (max-width: 375px) {
+	.bg-image {
+		height: 40vh;
+		width: 100vw;
+		background-image: url("images/bg-mobile-light.jpg");
+		background-size: 100% 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background: cover;
+	}
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 3rem;
+
+	img {
+		width: 2.5rem;
+		height: 2.5rem;
+		object-fit: cover;
+	}
+
+	h1 {
+		margin: 0;
+		padding: 0;
+	}
+}

@@ -1,0 +1,23 @@
+.todo-items-info {
+	height: 4rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+    .items-status {
+        display: flex;
+        justify-content: center;
+        
+        span {
+            padding: 0 4px;
+            cursor: pointer;
+        }
+    }
+    
+    .items-clear {
+        cursor: pointer;
+    }
+
+}

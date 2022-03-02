@@ -1,0 +1,75 @@
+$item-height: 4rem;
+$border-radius: 5px;
+
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	height: 100%;
+	width: 100%;
+}
+
+section {
+	width: 35em;
+	margin: 6rem 2rem;
+}
+
+.input__new {
+	height: $item-height;
+	width: 97%;
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
+	border-radius: $border-radius;
+	border: 0;
+	outline: none;
+	padding-left: 1rem;
+}
+
+ul {
+	width: 100%;
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+
+	.created {
+		display: flex;
+		align-items: center;
+		height: $item-height;
+		width: 100%;
+		border: 0;
+		margin: 0;
+		margin-top: 0.1rem;
+
+		.one {
+			border-top-left-radius: $border-radius;
+			border-top-right-radius: $border-radius;
+		}
+
+		.created-todo-one,
+		.created-todo-two,
+		.created-todo-three,
+		.created-todo-four,
+		.created-todo-five,
+		.created-todo-six {
+			width: 1.3em;
+			height: 1.3em;
+			border-radius: 50%;
+			vertical-align: middle;
+			appearance: none;
+			-webkit-appearance: none;
+			outline: none;
+			cursor: pointer;
+		}
+
+		.created-todo-one:checked,
+		.created-todo-two:checked,
+		.created-todo-three:checked,
+		.created-todo-four:checked,
+		.created-todo-five:checked,
+		.created-todo-six:checked {
+			background: linear-gradient(135deg, #55ddff 0%, #c058f3 100%);
+			opacity: 0.5;
+		}
+	}
+}

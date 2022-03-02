@@ -1,0 +1,54 @@
+$background-body: hsl(0, 0%, 95%);
+$background-todos: white;
+$border-bottom-input: rgba(0, 255, 0, 0.692);
+$shadow-box-hover: hsl(235, 21%, 11%);
+$color-border-hover: hsl(235, 24%, 19%);
+$color-footer: hsl(233, 14%, 35%);
+$color-footer-hover: hsl(220, 98%, 61%);
+
+body {
+	background-color: $background-body;
+
+	h1 {
+		color: $background-todos;
+	}
+
+	.input-new {
+		background-color: $background-todos;
+	}
+
+	.input__new:focus,
+	.input__new:active {
+		border-color: transparent;
+		border-bottom: 5px solid $border-bottom-input;
+	}
+
+	.created {
+		background-color: $background-todos;
+	}
+
+	.created:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 0px 7px 0px $shadow-box-hover;
+		border-color: $color-border-hover;
+	}
+
+	.created-todo-one,
+	.created-todo-two,
+	.created-todo-three,
+	.created-todo-four,
+	.created-todo-five,
+	.created-todo-six {
+		border: 1px solid #ddd;
+	}
+
+	.todo-items-info {
+		background-color: $background-todos;
+		color: $color-footer;
+	}
+
+	.items-status span:hover,
+	.items-clear:hover {
+		color: $color-footer-hover;
+	}
+}
